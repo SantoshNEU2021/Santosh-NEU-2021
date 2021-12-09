@@ -24,7 +24,7 @@ import userinterface.WholesaleRole.WholesaleWorKAreaJPanel;
  *
  * @author santo
  */
-public class PharmacyRole extends Role{
+public class WholesaleRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
       return new WholesaleWorKAreaJPanel(userProcessContainer, account, (WholesaleOrganization)organization,enterprise,network);

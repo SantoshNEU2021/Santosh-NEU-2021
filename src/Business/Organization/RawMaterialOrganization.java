@@ -5,24 +5,24 @@
  */
 package Business.Organization;
 
-import Business.Role.ChemicalRole;
+import Business.Role.RawMaterialRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author keshav
+ * @author santo
  */
-public class ChemicalOrganization extends Organization{
+public class RawMaterialOrganization extends Organization{
 
-    public ChemicalOrganization() {
-        super(Organization.Type.Chemical.getValue());
+    public RawMaterialOrganization() {
+        super(Organization.Type.RawMaterials.getValue());
     }
     
       @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new ChemicalRole());
+        roles.add(new RawMaterialRole());
         return roles;
     }
 
