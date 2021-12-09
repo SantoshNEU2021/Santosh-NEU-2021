@@ -7,7 +7,7 @@ package Business;
 
 import Business.Builder.Parts;
 import Business.Organization.AdminOrganization;
-import Business.WorkQueue.DoctorWorkRequest;
+import Business.WorkQueue.BuilderWorkRequest;
 import java.util.Random;
 
 /**

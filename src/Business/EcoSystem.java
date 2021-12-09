@@ -5,10 +5,9 @@
  */
 package Business;
 
-
-import Business.Chemical.ChemicalList;
-import Business.Drug.DrugList;
-import Business.Gene.GeneHistory;
+import Business.RawMaterial.RawMaterialList;
+import Business.Supplier.SupplierList;
+//import Business.Gene.GeneHistory;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Role.Role;
@@ -22,17 +21,10 @@ import java.util.ArrayList;
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
-    private FinalConfigDirectory restaurantDirectory;
-    private CustomerDirectory customerDirectory;
-    private DeliveryManDirectory deliveryManDirectory;
-
-    public EcoSystem(FinalConfigDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory) {
-
-        this.restaurantDirectory = restaurantDirectory;
-        this.customerDirectory = customerDirectory;
-        this.deliveryManDirectory = deliveryManDirectory;
-    }
-    
+    private ArrayList<Network> networkList;
+    private RawMaterialList rawMaterialList;
+    private SupplierList supplierList;
+//    private GeneHistory geneList;
     public static EcoSystem getInstance(){
         if(business==null){
             business=new EcoSystem();
@@ -40,6 +32,11 @@ public class EcoSystem extends Organization{
         return business;
     }
     
+    public Network createAndAddNetwork(){
+        Network network=new Network();
+        networkList.add(network);
+        return network;
+    }
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roleList=new ArrayList<Role>();
@@ -48,12 +45,52 @@ public class EcoSystem extends Organization{
     }
     private EcoSystem(){
         super(null);
-       // networkList=new ArrayList<Network>();
+        networkList=new ArrayList<Network>();
+        supplierList = new SupplierList(); 
+        rawMaterialList = new RawMaterialList();
+//        geneList = new GeneHistory();
     }
 
+    public ArrayList<Network> getNetworkList() {
+        return networkList;
+    }
+
+    public void setNetworkList(ArrayList<Network> networkList) {
+        this.networkList = networkList;
+    }
     
     public boolean checkIfUserIsUnique(String userName){
-       //
-       return false;
+        if(!this.getUserAccountDirectory().checkIfUsernameIsUnique(userName)){
+            return false;
+        }
+        for(Network network:networkList){
+            
+        }
+        return true;
     }
+
+    public SupplierList getSupplierList() {
+        return supplierList;
+    }
+
+    public void setDrugList(SupplierList supplierList) {
+        this.supplierList = supplierList;
+    }
+
+    public RawMaterialList getRawMaterialList() {
+        return rawMaterialList;
+    }
+
+    public void setRawMaterialList(RawMaterialList rawMaterialList) {
+        this.rawMaterialList = rawMaterialList;
+    }
+
+//    public GeneHistory getGeneList() {
+//        return geneList;
+//    }
+//
+//    public void setGeneList(GeneHistory geneList) {
+//        this.geneList = geneList;
+//    }
+    
 }

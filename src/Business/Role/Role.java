@@ -6,7 +6,10 @@ package Business.Role;
 
 import Business.EcoSystem;
 
-import Business.Organization;
+import Business.EcoSystem;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 
@@ -16,11 +19,10 @@ import javax.swing.JPanel;
  */
 public abstract class Role {
     
-    public enum RoleType{
-        RestaurantAdmin("RestaurantAdmin"),
-        Customer("Customer"),
-        DeliveryMan("Delivery"),
-        SysAdmin("Sysadmin");
+       public enum RoleType{
+        Admin("Admin"),
+        Builder("Builder"),
+        SoftwareEngineer("Software Engineer");
         
         private String value;
         private RoleType(String value){
@@ -38,13 +40,16 @@ public abstract class Role {
     }
     
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
-            UserAccount account,  
-            EcoSystem business);
+            UserAccount account, 
+            Organization organization, 
+            Enterprise enterprise, 
+            EcoSystem business, Network network);
 
     @Override
     public String toString() {
         return this.getClass().getName();
     }
+    
     
     
 }

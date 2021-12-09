@@ -5,7 +5,7 @@
  */
 package Business.Organization;
 
-import Business.MedicalInventory.MedicalInventory;
+import Business.GPUInventory.GPUInventory;
 import Business.Role.PharmacyRole;
 import Business.Role.Role;
 import java.util.ArrayList;
@@ -16,11 +16,11 @@ import java.util.ArrayList;
  */
 public class PharmacyOrganization extends Organization{
 
-    private ArrayList<MedicalInventory> medList;
+    private ArrayList<GPUInventory> medList;
     public PharmacyOrganization() {
      
        super(Organization.Type.Pharmacy.getValue());
-        medList=new ArrayList<MedicalInventory>();
+        medList=new ArrayList<GPUInventory>();
     }
     
     @Override
@@ -30,15 +30,15 @@ public class PharmacyOrganization extends Organization{
         return roles;
     }
 
-    public ArrayList<MedicalInventory> getMedList() {
+    public ArrayList<GPUInventory> getMedList() {
         return medList;
     }
 
-    public void setMedList(ArrayList<MedicalInventory> medList) {
+    public void setMedList(ArrayList<GPUInventory> medList) {
         this.medList = medList;
     }
     
-     public void addMedicine(MedicalInventory mi)
+     public void addMedicine(GPUInventory mi)
     {
        
         medList.add(mi);
