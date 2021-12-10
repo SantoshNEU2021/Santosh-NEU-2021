@@ -36,13 +36,13 @@ public class SupplierOrganization extends Organization{
         return rawCompoundList;
     }
 
-    public void setChemList(ArrayList<RawCompound> rawCompoundListList) {
+    public void setRawCompoundList(ArrayList<RawCompound> rawCompoundList) {
         this.rawCompoundList = rawCompoundList;
     }
 
     
     
-    public void addChemical(RawCompound cdi)
+    public void addRawCompound(RawCompound cdi)
     {
        
        rawCompoundList.add(cdi);

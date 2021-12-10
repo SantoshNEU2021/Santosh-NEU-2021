@@ -37,7 +37,7 @@ public class BuilderOrganization extends Organization{
         return roles;
     }
      
-    public void addPrescription(Parts parts){
+    public void addParts(Parts parts){
         
           partsList.add(parts);
          

@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Business.Supplier;
+import Business.OS.OSDirectory;
 import Business.RawMaterial.RawMaterialList;
 
 /**
@@ -15,25 +16,25 @@ public class Supplier {
     private int supplierId;
     private String supplyName;
     private RawMaterialList materialList;
-//    private GeneHistory geneHistory;
+    private OSDirectory osDirectory;
     private static int counter=0;    
     
     public Supplier(){
         materialList = new RawMaterialList();
-//        geneHistory = new GeneHistory();
+        osDirectory = new OSDirectory();
         supplierId = counter;
         ++counter;
     }
 
-    public int getDrugId() {
+    public int getGPUId() {
         return supplierId;
     }   
 
-    public String getDrugName() {
+    public String getGPUName() {
         return supplyName;
     }
 
-    public void setDrugName(String drugName) {
+    public void setGPUName(String drugName) {
         this.supplyName = drugName;
     }
 
@@ -44,14 +45,14 @@ public class Supplier {
     public void setRawMaterialList(RawMaterialList materialList) {
         this.materialList = materialList;
     }
+    
+    public OSDirectory getOSDirectory() {
+        return osDirectory;
+   }
 
-//    public GeneHistory getGeneHistory() {
-//        return geneHistory;
-//    }
-
-//    public void setGeneHistory(GeneHistory geneHistory) {
-//        this.geneHistory = geneHistory;
-//    }   
+   public void setOSDirectory(OSDirectory osDirectory) {
+        this.osDirectory = osDirectory;
+   }   
     
     @Override
      public String toString(){

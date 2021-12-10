@@ -5,16 +5,7 @@
  */
 package Business.Builder;
 
-/**
- *
- * @author harold
- */
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Business.Doctor;
+import Business.OS.OSDirectory;
 
 
 /**
@@ -27,14 +18,14 @@ public class FinalConfig {
     private int cores;
     private String cpuType;
     private String softwareType;
-//    private GeneHistory geneHistory;
+    private OSDirectory osDirectory;
     private String gpuType;
     private String newSupply;
 //    private String clinicalStatus;
 
-//    public Patient() {
-//        geneHistory = new GeneHistory();
-//    }
+    public FinalConfig() {
+        osDirectory = new OSDirectory();
+    }
     
     
 
@@ -78,13 +69,13 @@ public class FinalConfig {
         this.softwareType = softwareType;
     }
 
-//    public GeneHistory getGeneHistory() {
-//        return geneHistory;
-//    }
+    public OSDirectory getOSDirectory() {
+       return osDirectory;
+   }
 
-//    public void setGeneHistory(GeneHistory geneHistory) {
-//        this.geneHistory = geneHistory;
-//    }
+    public void setOSDirectory(OSDirectory osDirectory) {
+        this.osDirectory = osDirectory;
+   }
 
     public String getGPUType() {
         return gpuType;

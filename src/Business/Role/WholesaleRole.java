@@ -13,7 +13,7 @@ import Business.Organization.Organization;
 import Business.Organization.WholesaleOrganization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.WholesaleRole.WholesaleWorKAreaJPanel;
+import userinterface.WholesaleRole.WholesaleWorkAreaJPanel;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -27,6 +27,6 @@ import userinterface.WholesaleRole.WholesaleWorKAreaJPanel;
 public class WholesaleRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
-      return new WholesaleWorKAreaJPanel(userProcessContainer, account, (WholesaleOrganization)organization,enterprise,network);
+      return new WholesaleWorkAreaJPanel(userProcessContainer, account, (WholesaleOrganization)organization,enterprise,network);
     }
 }

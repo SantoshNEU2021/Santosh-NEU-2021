@@ -7,7 +7,7 @@ package Business;
 
 import Business.RawMaterial.RawMaterialList;
 import Business.Supplier.SupplierList;
-//import Business.Gene.GeneHistory;
+import Business.OS.OSDirectory;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Role.Role;
@@ -24,7 +24,7 @@ public class EcoSystem extends Organization{
     private ArrayList<Network> networkList;
     private RawMaterialList rawMaterialList;
     private SupplierList supplierList;
-//    private GeneHistory geneList;
+    private OSDirectory oSDirectory;
     public static EcoSystem getInstance(){
         if(business==null){
             business=new EcoSystem();
@@ -48,7 +48,7 @@ public class EcoSystem extends Organization{
         networkList=new ArrayList<Network>();
         supplierList = new SupplierList(); 
         rawMaterialList = new RawMaterialList();
-//        geneList = new GeneHistory();
+        oSDirectory = new OSDirectory();
     }
 
     public ArrayList<Network> getNetworkList() {
@@ -85,12 +85,12 @@ public class EcoSystem extends Organization{
         this.rawMaterialList = rawMaterialList;
     }
 
-//    public GeneHistory getGeneList() {
-//        return geneList;
-//    }
-//
-//    public void setGeneList(GeneHistory geneList) {
-//        this.geneList = geneList;
-//    }
+    public OSDirectory getOSDirectory() {
+        return oSDirectory;
+    }
+
+    public void setOSDirectory(OSDirectory oSDirectory) {
+        this.oSDirectory = oSDirectory;
+    }
     
 }
