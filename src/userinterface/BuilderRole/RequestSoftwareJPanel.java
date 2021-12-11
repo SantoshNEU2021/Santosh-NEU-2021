@@ -82,7 +82,7 @@ public class RequestSoftwareJPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Patient Name :");
+        jLabel2.setText("Build Name :");
 
         txtPatientName.setEditable(false);
 
@@ -92,7 +92,7 @@ public class RequestSoftwareJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Gene"
+                "ID", "Software"
             }
         ) {
             Class[] types = new Class [] {
@@ -163,7 +163,7 @@ public class RequestSoftwareJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("LAB TEST PORTAL");
+        jLabel1.setText("SOFTWARE PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

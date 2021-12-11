@@ -94,7 +94,7 @@ public class ExistingResultsJPanel extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("EXISTING DRUG PORTAL");
+        jLabel3.setText("EXISTING GPU");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -120,7 +120,7 @@ public class ExistingResultsJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ChemicalName", "GeneName"
+                "Raw Material", "Compatible Software"
             }
         ) {
             Class[] types = new Class [] {
@@ -144,7 +144,7 @@ public class ExistingResultsJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(chemicalGeneTbl);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Drug Name:");
+        jLabel1.setText("GPU Name:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

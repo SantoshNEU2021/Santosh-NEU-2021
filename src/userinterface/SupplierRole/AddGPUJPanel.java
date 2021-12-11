@@ -85,7 +85,7 @@ public class AddGPUJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
 
         btnAddDrug.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnAddDrug.setText("Add Drug");
+        btnAddDrug.setText("Add GPU");
         btnAddDrug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddDrugActionPerformed(evt);
@@ -101,7 +101,7 @@ public class AddGPUJPanel extends javax.swing.JPanel {
         });
 
         btnAddChemical.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnAddChemical.setText("Add Chemical");
+        btnAddChemical.setText("Add Raw Material");
         btnAddChemical.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddChemicalActionPerformed(evt);
@@ -113,7 +113,7 @@ public class AddGPUJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("DRUG PORTAL");
+        jLabel1.setText("SUPPLIER PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -139,7 +139,7 @@ public class AddGPUJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "DrugName"
+                "ID", "GPU"
             }
         ) {
             Class[] types = new Class [] {
@@ -161,7 +161,7 @@ public class AddGPUJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblDrug);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Drug Name:");
+        jLabel2.setText("GPU Name:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

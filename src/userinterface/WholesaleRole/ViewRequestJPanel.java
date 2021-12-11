@@ -98,7 +98,7 @@ public class ViewRequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "MEDICINE NAME", "REQUIRED QUANTITY", "RECIEVER", "STATUS", "DELIVERY DATE"
+                "GPU NAME", "REQUIRED QUANTITY", "RECIEVER", "STATUS", "DELIVERY DATE"
             }
         ) {
             boolean[] canEdit = new boolean [] {

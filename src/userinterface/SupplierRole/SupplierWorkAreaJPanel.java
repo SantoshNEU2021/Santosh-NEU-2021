@@ -97,7 +97,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Drug Name", "Quantity", "Sender", "Receiver", "Status", "Delivery Time"
+                "GPU Name", "Quantity", "Sender", "Receiver", "Status", "Delivery Time"
             }
         ) {
             Class[] types = new Class [] {
@@ -143,7 +143,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         btnReqChemical.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnReqChemical.setText("Request Chemical");
+        btnReqChemical.setText("Request Raw Material");
         btnReqChemical.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReqChemicalActionPerformed(evt);
@@ -159,7 +159,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         btnAddDrug.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnAddDrug.setText("Add Drug");
+        btnAddDrug.setText("Add GPU");
         btnAddDrug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddDrugActionPerformed(evt);
@@ -171,7 +171,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("DRUG SUPPLIER PORTAL");
+        jLabel2.setText("GPU SUPPLIER PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -237,7 +237,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnAddDrug, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

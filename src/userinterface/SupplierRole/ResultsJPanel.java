@@ -96,7 +96,7 @@ public class ResultsJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Patient Name", "Age", "Sex", "Message", "Sender"
+                "Build Name", "Cores", "Make", "Message", "Sender"
             }
         ) {
             Class[] types = new Class [] {

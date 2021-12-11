@@ -100,7 +100,7 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("CHEMICAL PORTAL");
+        jLabel1.setText("RAW MATERIAL PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -126,7 +126,7 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ChemicalName", "GeneName"
+                "Raw Material", "Compatible Software"
             }
         ) {
             Class[] types = new Class [] {
@@ -150,10 +150,10 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblChemicalGene);
 
         lblChemical.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblChemical.setText("Chemical Name :");
+        lblChemical.setText("Raw Material : ");
 
         lblGene.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblGene.setText("Gene Name :");
+        lblGene.setText("Compatible Software:");
 
         btnAdd.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         btnAdd.setText("Add");

@@ -130,7 +130,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "MEDICINE NAME", "SERIAL NUMBER ", "AVAILABILE QUANTITY", "REQUIRED QUANTITY", "REORDER STATUS"
+                "GPU NAME", "SERIAL NUMBER ", "AVAILABILE QUANTITY", "REQUIRED QUANTITY", "REORDER STATUS"
             }
         ) {
             Class[] types = new Class [] {
@@ -159,7 +159,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         txtSerialNumber.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Medicine Name :");
+        jLabel3.setText("GPU Name :");
 
         txtMedicineName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtMedicineName.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +184,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         txtReqQuantity.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         btnAddMedicine.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnAddMedicine.setText("ADD MEDICINE");
+        btnAddMedicine.setText("ADD GPU");
         btnAddMedicine.setBorder(null);
         btnAddMedicine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,7 +253,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "MEDICINE NAME", "QUANTITY", "STATUS"
+                "GPU NAME", "QUANTITY", "STATUS"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -268,7 +268,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane.setViewportView(tblPharmacyRequest);
 
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24)); // NOI18N
-        jLabel1.setText("Prescribed Medicine:");
+        jLabel1.setText("Required GPU:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -303,7 +303,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("PHARMACY PORTAL");
+        jLabel6.setText("WHOLESALE PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

@@ -97,7 +97,7 @@ public class ViewRawMaterialDetailsJpanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("CHEMICAL DETAILS");
+        jLabel5.setText("RAW MATERIAL DETAILS");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -122,7 +122,7 @@ public class ViewRawMaterialDetailsJpanel extends javax.swing.JPanel {
         jLabel2.setText("Serial Number :");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Chemical Name :");
+        jLabel3.setText("Raw Material Name :");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Availability :");

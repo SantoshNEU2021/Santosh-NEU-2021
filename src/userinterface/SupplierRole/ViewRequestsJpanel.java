@@ -84,7 +84,7 @@ public class ViewRequestsJpanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "CHEMICAL NAME", "REQUIRED QUANTITY", "RECIEVER", "STATUS", "DELIVERY DATE"
+                "MATERIAL NAME", "REQUIRED QUANTITY", "RECIEVER", "STATUS", "DELIVERY DATE"
             }
         ) {
             boolean[] canEdit = new boolean [] {

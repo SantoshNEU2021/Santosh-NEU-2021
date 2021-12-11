@@ -145,7 +145,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PRESCRIPTION PORTAL");
+        jLabel1.setText("BUILDER PORTAL");
 
         btnBack.setBackground(new java.awt.Color(255, 255, 255));
         btnBack.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
@@ -183,15 +183,15 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         jPanel2.setBackground(java.awt.Color.white);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Patient Name :");
+        jLabel2.setText("Build Name :");
 
         txtPatientName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Sex :");
+        jLabel3.setText("Make :");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Age :");
+        jLabel4.setText("Cores :");
 
         txtAge.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,7 +213,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         });
 
         cbxDiagnosis.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cbxDiagnosis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Please select--", "Achondroplasia", "Marfansyndrome", "Cysticfibrosis", "TaySachs", "Haemophilia", "Mosaicism", "Downsyndrome", "Turnersyndrome" }));
+        cbxDiagnosis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Please select--", "Intel i7 11700K", "Intel i7 10700K", "Intel i5 11500", "AMD Ryzen 5 5800X", "AMD Ryzen 9 5900X", "AMD Ryzen 7 5700X" }));
         cbxDiagnosis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxDiagnosisActionPerformed(evt);
@@ -221,13 +221,13 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Diagnosis :");
+        jLabel6.setText("CPU :");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("Medication :");
+        jLabel7.setText("GPU");
 
         cbxMedication.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cbxMedication.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Please select--", "Galafold", "Onpattro", "Revcovi", "Tegsedi", "Haegarda", "Brineura", "Mepsevii", "Spinraza" }));
+        cbxMedication.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Please select--", "RTX 3080", "RTX 3070", "RTX 3060", "GTX 1080ti", "Radeon RX 6900XT", "RTX Titan", "Radeon RX6800" }));
         cbxMedication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxMedicationActionPerformed(evt);
@@ -235,7 +235,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         });
 
         cbxSex.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cbxSex.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Male", "Female" }));
+        cbxSex.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Select--", "Intel", "AMD" }));
         cbxSex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxSexActionPerformed(evt);
@@ -243,7 +243,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("Times a day:");
+        jLabel8.setText("Count");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("For :");
@@ -390,7 +390,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         try {
             Integer.parseInt(age);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Age must be integer!");
+            JOptionPane.showMessageDialog(null, "Cores must be integer!");
             flag = false;
             return;
         }

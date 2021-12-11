@@ -81,7 +81,7 @@ public class ViewDetailsJPanel extends javax.swing.JPanel {
         txtSerialNumber.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Medicine Name :");
+        jLabel3.setText("GPU Name :");
 
         txtMedicineName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtMedicineName.addActionListener(new java.awt.event.ActionListener() {
@@ -180,7 +180,7 @@ public class ViewDetailsJPanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("MEDICINE DETAILS ");
+        jLabel5.setText("GPU DETAILS ");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

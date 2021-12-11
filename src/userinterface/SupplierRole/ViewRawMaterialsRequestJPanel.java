@@ -100,7 +100,7 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "CHEMICAL NAME", "SERIAL NUMBER ", "AVAILABILE QUANTITY", "REQUIRED QUANTITY", "REORDER STATUS"
+                "MATERIAL NAME", "SERIAL NUMBER ", "AVAILABILE QUANTITY", "REQUIRED QUANTITY", "REORDER STATUS"
             }
         ) {
             Class[] types = new Class [] {
@@ -158,7 +158,7 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("REQUEST CHEMICAL PORTAL");
+        jLabel5.setText("REQUEST RAW MATERIAL PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -183,7 +183,7 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
         jLabel1.setText("Serial No. :");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Chemical Name :");
+        jLabel2.setText("Material Name :");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Available Quantity :");
@@ -233,7 +233,7 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
         );
 
         btnAddChemicals.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnAddChemicals.setText("Add Chemicals");
+        btnAddChemicals.setText("Add Materials");
         btnAddChemicals.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddChemicalsActionPerformed(evt);

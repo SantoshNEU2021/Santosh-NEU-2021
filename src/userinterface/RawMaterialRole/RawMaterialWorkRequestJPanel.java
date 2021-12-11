@@ -80,7 +80,7 @@ public class RawMaterialWorkRequestJPanel extends javax.swing.JPanel {
 
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("CHEMICAL WORK PORTAL");
+        jLabel6.setText("RAW MATERIAL WORK PORTAL");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

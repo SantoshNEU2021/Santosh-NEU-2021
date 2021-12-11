@@ -119,7 +119,7 @@ public class SoftwareEngineerWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Patient Name", "Age", "Sex", "Message", "Sender", "Receiver", "Status", "New Drug"
+                "Build Name", "Cores", "Make", "Message", "Sender", "Receiver", "Status", "New "
             }
         ) {
             Class[] types = new Class [] {
@@ -145,7 +145,7 @@ public class SoftwareEngineerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("LAB ASSISTANT PORTAL");
+        jLabel5.setText("ENGINEER PORTAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

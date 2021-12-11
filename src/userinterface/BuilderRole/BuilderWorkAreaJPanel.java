@@ -35,7 +35,7 @@ public class BuilderWorkAreaJPanel extends javax.swing.JPanel {
     private static final String CLASS_NAME = BuilderWorkAreaJPanel.class.getName();
  
     /**
-     * Creates new form DoctorWorkAreaJPanel
+     * Creates new form BuilderWorkAreaJPanel
      */
     public BuilderWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, BuilderOrganization organization, Enterprise enterprise, EcoSystem ecoSystem, Network network) {
         initComponents();        
@@ -75,7 +75,7 @@ public class BuilderWorkAreaJPanel extends javax.swing.JPanel {
 
         btnPrecription.setBackground(new java.awt.Color(255, 255, 255));
         btnPrecription.setFont(new java.awt.Font("Courier New", 0, 18)); // NOI18N
-        btnPrecription.setText("WRITE PRESCRIPTION");
+        btnPrecription.setText("CONFIGURE PC");
         btnPrecription.setBorder(null);
         btnPrecription.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
