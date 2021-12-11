@@ -254,7 +254,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Medicine Name", "Total Quantity", "Patient Name", "Status"
+                "GPU Name", "Total Quantity", "Build Name", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -341,9 +341,9 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
                     .addComponent(jSpinnerNoOfDays, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(btnSavePrescription, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
-                .addComponent(scrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
-                .addGap(27, 27, 27))
+                .addGap(55, 55, 55)
+                .addComponent(scrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

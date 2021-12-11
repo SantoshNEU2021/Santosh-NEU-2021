@@ -117,7 +117,7 @@ public class NewGPUJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
 
         btnNewDrug.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnNewDrug.setText("Add New Drug");
+        btnNewDrug.setText("Add New GPU");
         btnNewDrug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNewDrugActionPerformed(evt);
@@ -137,7 +137,7 @@ public class NewGPUJPanel extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("NEW DRUG");
+        jLabel4.setText("NEW GPU");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -159,7 +159,7 @@ public class NewGPUJPanel extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Patient Name:");
+        jLabel2.setText("Build Name:");
 
         tblDrug.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
         tblDrug.setModel(new javax.swing.table.DefaultTableModel(
@@ -167,7 +167,7 @@ public class NewGPUJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Gene", "Chemical Compound"
+                "Software", "Raw Materials"
             }
         ) {
             Class[] types = new Class [] {
@@ -189,7 +189,7 @@ public class NewGPUJPanel extends javax.swing.JPanel {
         jScrollPane.setViewportView(tblDrug);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Drug Name:");
+        jLabel3.setText("GPU Name:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
