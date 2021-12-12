@@ -79,9 +79,9 @@ public class RawMaterialWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        tblChemical.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
+        tblChemical.setFont(new java.awt.Font("Palatino Linotype", 0, 20)); // NOI18N
         tblChemical.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -108,28 +108,31 @@ public class RawMaterialWorkAreaJPanel extends javax.swing.JPanel {
         tblChemical.setRowHeight(30);
         jScrollPane2.setViewportView(tblChemical);
 
-        btnAssign.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnAssign.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnAssign.setText("Assign to me");
+        btnAssign.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAssign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAssignActionPerformed(evt);
             }
         });
 
-        btnProcess.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnProcess.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnProcess.setText("Process");
+        btnProcess.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnProcess.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProcessActionPerformed(evt);
             }
         });
 
-        btnRefresh.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnRefresh.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnRefresh.setText("Refresh");
+        btnRefresh.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 102, 51));
 
-        jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("RAW MATERIAL PORTAL");
 
