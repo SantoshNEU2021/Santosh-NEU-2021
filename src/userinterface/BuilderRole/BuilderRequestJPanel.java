@@ -122,11 +122,11 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
 
         button1.setLabel("button1");
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
 
-        enterpriseLbl.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        enterpriseLbl.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         enterpriseLbl.setText("EnterPrise :");
 
         valueLbl.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
@@ -166,9 +166,9 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(0, 153, 255));
 
-        enterpriseLbl1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        enterpriseLbl1.setFont(new java.awt.Font("Baskerville", 1, 24)); // NOI18N
         enterpriseLbl1.setText("Lab Results:");
 
         tblDoctorRequest.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -208,18 +208,18 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewResults.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnViewResults.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnViewResults.setText("View Results");
-        btnViewResults.setBorder(null);
+        btnViewResults.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewResults.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewResultsActionPerformed(evt);
             }
         });
 
-        btnClinicalTrail.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnClinicalTrail.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnClinicalTrail.setText("Clinical Trail");
-        btnClinicalTrail.setBorder(null);
+        btnClinicalTrail.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnClinicalTrail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClinicalTrailActionPerformed(evt);
@@ -261,9 +261,9 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(248, 90, 51));
 
-        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("REQUEST PORTAL");
@@ -284,25 +284,25 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel2.setText("Build Name :");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel3.setText("Make :");
 
         cbxSex.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Please select--", "NVIDIA", "AMD" }));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel4.setText("Cores :");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel5.setText("Message :");
 
-        btnSubmit.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnSubmit.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnSubmit.setText("SUBMIT");
-        btnSubmit.setBorder(null);
+        btnSubmit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitActionPerformed(evt);
@@ -337,7 +337,7 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(177, 177, 177))
+                .addGap(255, 255, 255))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -389,7 +389,7 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

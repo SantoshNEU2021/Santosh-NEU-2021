@@ -114,27 +114,29 @@ public class NewGPUJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         txtNameDrug = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        btnNewDrug.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnNewDrug.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnNewDrug.setText("Add New GPU");
+        btnNewDrug.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnNewDrug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNewDrugActionPerformed(evt);
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnBack.setText("<- Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(248, 90, 51));
 
-        jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Baskerville", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("NEW GPU");
@@ -156,9 +158,9 @@ public class NewGPUJPanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel2.setText("Build Name:");
 
         tblDrug.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
@@ -188,7 +190,7 @@ public class NewGPUJPanel extends javax.swing.JPanel {
         tblDrug.setRowHeight(30);
         jScrollPane.setViewportView(tblDrug);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel3.setText("GPU Name:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

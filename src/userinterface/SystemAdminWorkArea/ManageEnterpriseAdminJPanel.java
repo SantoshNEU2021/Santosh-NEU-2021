@@ -105,19 +105,20 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         txtPassword = new javax.swing.JPasswordField();
         btnSubmit = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        btnBack.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnBack.setText("<- Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(248, 90, 51));
 
-        jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Baskerville", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("ENTERPRISE ADMIN PORTAL");
@@ -139,7 +140,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
 
         tblEnterpriseAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -159,7 +160,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblEnterpriseAdmin);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel1.setText("Network:");
 
         cbxNetwork.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -169,22 +170,23 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel3.setText("Enterprise:");
 
         cbxEnterprise.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel5.setText("Name:");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel2.setText("Username:");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel4.setText("Password:");
 
-        btnSubmit.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnSubmit.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnSubmit.setText("Submit");
+        btnSubmit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitActionPerformed(evt);
