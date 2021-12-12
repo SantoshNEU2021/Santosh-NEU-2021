@@ -119,12 +119,12 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         btnViewDetails = new javax.swing.JButton();
         btnViewRequest = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         tblRecord.setBorder(new javax.swing.border.MatteBorder(null));
-        tblRecord.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
+        tblRecord.setFont(new java.awt.Font("Palatino Linotype", 0, 20)); // NOI18N
         tblRecord.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -151,14 +151,14 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         tblRecord.setRowHeight(25);
         jScrollPane1.setViewportView(tblRecord);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(0, 153, 255));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Centaur", 1, 18)); // NOI18N
         jLabel2.setText("Serial Number :");
 
         txtSerialNumber.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Centaur", 1, 18)); // NOI18N
         jLabel3.setText("GPU Name :");
 
         txtMedicineName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -168,7 +168,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Centaur", 1, 18)); // NOI18N
         jLabel4.setText("In Stock :");
 
         txtInStock.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -178,14 +178,14 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Centaur", 1, 18)); // NOI18N
         jLabel5.setText("Required Quantity :");
 
         txtReqQuantity.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        btnAddMedicine.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnAddMedicine.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnAddMedicine.setText("ADD GPU");
-        btnAddMedicine.setBorder(null);
+        btnAddMedicine.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAddMedicine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddMedicineActionPerformed(evt);
@@ -247,7 +247,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        tblPharmacyRequest.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
+        tblPharmacyRequest.setFont(new java.awt.Font("Palatino Linotype", 0, 20)); // NOI18N
         tblPharmacyRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -267,7 +267,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
         tblPharmacyRequest.setRowHeight(25);
         jScrollPane.setViewportView(tblPharmacyRequest);
 
-        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel1.setText("Required GPU:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -298,9 +298,9 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(255, 102, 51));
 
-        jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("WHOLESALE PORTAL");
@@ -322,27 +322,27 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        btnCheckStatus.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnCheckStatus.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnCheckStatus.setText("Check Status");
-        btnCheckStatus.setBorder(null);
+        btnCheckStatus.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCheckStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCheckStatusActionPerformed(evt);
             }
         });
 
-        btnViewDetails.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnViewDetails.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnViewDetails.setText("View Details");
-        btnViewDetails.setBorder(null);
+        btnViewDetails.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewDetailsActionPerformed(evt);
             }
         });
 
-        btnViewRequest.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnViewRequest.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnViewRequest.setText("View Request");
-        btnViewRequest.setBorder(null);
+        btnViewRequest.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewRequestActionPerformed(evt);
