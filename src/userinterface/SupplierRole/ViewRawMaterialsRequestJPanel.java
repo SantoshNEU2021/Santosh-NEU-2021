@@ -91,7 +91,7 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
         txtRequiredQuantity = new javax.swing.JTextField();
         btnAddChemicals = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
         tblReorder.setBorder(new javax.swing.border.MatteBorder(null));
         tblReorder.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 20)); // NOI18N
@@ -121,41 +121,45 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
         tblReorder.setRowHeight(30);
         jScrollPane1.setViewportView(tblReorder);
 
-        btnInventory.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnInventory.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnInventory.setText("Inventory Check");
+        btnInventory.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnInventory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInventoryActionPerformed(evt);
             }
         });
 
-        btnViewRequests.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnViewRequests.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnViewRequests.setText("View Requests");
+        btnViewRequests.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewRequests.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewRequestsActionPerformed(evt);
             }
         });
 
-        btnViewDetails.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnViewDetails.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnViewDetails.setText("View Details");
+        btnViewDetails.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewDetailsActionPerformed(evt);
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(248, 90, 51));
 
-        jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Baskerville", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("REQUEST RAW MATERIAL PORTAL");
@@ -177,18 +181,18 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel1.setText("Serial No. :");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel2.setText("Material Name :");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel3.setText("Available Quantity :");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         jLabel4.setText("Required Quantity :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -232,8 +236,9 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
-        btnAddChemicals.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnAddChemicals.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnAddChemicals.setText("Add Materials");
+        btnAddChemicals.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAddChemicals.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddChemicalsActionPerformed(evt);

@@ -93,11 +93,11 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
         btnAdd = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(248, 90, 51));
 
-        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("RAW MATERIAL PORTAL");
@@ -118,7 +118,7 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
 
         tblChemicalGene.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 20)); // NOI18N
         tblChemicalGene.setModel(new javax.swing.table.DefaultTableModel(
@@ -149,14 +149,15 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
         tblChemicalGene.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(tblChemicalGene);
 
-        lblChemical.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblChemical.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         lblChemical.setText("Raw Material : ");
 
-        lblGene.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblGene.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
         lblGene.setText("Compatible Software:");
 
-        btnAdd.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnAdd.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnAdd.setText("Add");
+        btnAdd.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
@@ -202,8 +203,9 @@ public class AddRawMaterialJPanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        btnBack.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);

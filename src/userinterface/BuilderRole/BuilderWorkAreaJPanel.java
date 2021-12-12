@@ -69,14 +69,14 @@ public class BuilderWorkAreaJPanel extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
         btnPrecription.setBackground(new java.awt.Color(255, 255, 255));
-        btnPrecription.setFont(new java.awt.Font("Courier New", 0, 18)); // NOI18N
+        btnPrecription.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
         btnPrecription.setText("CONFIGURE PC");
-        btnPrecription.setBorder(null);
+        btnPrecription.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPrecription.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPrecriptionActionPerformed(evt);
@@ -84,9 +84,9 @@ public class BuilderWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         btnLabTest.setBackground(new java.awt.Color(255, 255, 255));
-        btnLabTest.setFont(new java.awt.Font("Courier New", 0, 18)); // NOI18N
+        btnLabTest.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
         btnLabTest.setText("Lab Test");
-        btnLabTest.setBorder(null);
+        btnLabTest.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnLabTest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLabTestActionPerformed(evt);
@@ -114,9 +114,9 @@ public class BuilderWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap(54, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(248, 90, 51));
 
-        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("WORK AREA PORTAL");
