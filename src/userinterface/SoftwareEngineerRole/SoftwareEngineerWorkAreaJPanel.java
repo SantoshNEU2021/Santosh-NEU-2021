@@ -87,33 +87,36 @@ public class SoftwareEngineerWorkAreaJPanel extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
-        btnAssign.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnAssign.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnAssign.setText("Assign to me");
+        btnAssign.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAssign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAssignActionPerformed(evt);
             }
         });
 
-        btnProcess.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnProcess.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnProcess.setText("Process");
+        btnProcess.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnProcess.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProcessActionPerformed(evt);
             }
         });
 
-        btnRefresh.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        btnRefresh.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnRefresh.setText("Refresh");
+        btnRefresh.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRefreshActionPerformed(evt);
             }
         });
 
-        tblLabWorkArea.setFont(new java.awt.Font("Microsoft JhengHei Light", 0, 20)); // NOI18N
+        tblLabWorkArea.setFont(new java.awt.Font("Palatino Linotype", 0, 20)); // NOI18N
         tblLabWorkArea.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -140,9 +143,9 @@ public class SoftwareEngineerWorkAreaJPanel extends javax.swing.JPanel {
         tblLabWorkArea.setRowHeight(30);
         jScrollPane.setViewportView(tblLabWorkArea);
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(255, 102, 51));
 
-        jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("ENGINEER PORTAL");
