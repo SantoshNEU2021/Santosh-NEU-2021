@@ -381,7 +381,7 @@ public class ViewRawMaterialsRequestJPanel extends javax.swing.JPanel {
                         System.out.println("***** Organization Name:" +enterprise.getName());
                         for(Organization organization:enterprise.getOrganizationDirectory().getOrganizationList()){
                             System.out.println("***** Organization Name:" +organization.getName());
-                            if(organization.getName().equalsIgnoreCase("Raw Material Organization")){
+                            if(organization.getName().equalsIgnoreCase("Raw Materials Organization")){
                                 System.out.println("True");
 
                                 System.out.println("***** organization Name"+organization.getName());
