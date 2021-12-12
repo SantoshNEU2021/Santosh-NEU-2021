@@ -92,7 +92,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         organizationJTable = new javax.swing.JTable();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 255));
 
         btnBack.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         btnBack.setText("<- Back");
