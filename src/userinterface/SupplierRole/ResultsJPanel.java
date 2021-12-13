@@ -127,7 +127,7 @@ public class ResultsJPanel extends javax.swing.JPanel {
         });
 
         btnGenerateDrug.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
-        btnGenerateDrug.setText("Generate Drug");
+        btnGenerateDrug.setText("Generate GPU");
         btnGenerateDrug.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnGenerateDrug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

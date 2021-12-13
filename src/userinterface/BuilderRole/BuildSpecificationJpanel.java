@@ -247,7 +247,7 @@ public class BuildSpecificationJpanel extends javax.swing.JPanel {
         jLabel8.setText("Count");
 
         jLabel9.setFont(new java.awt.Font("Charter", 0, 14)); // NOI18N
-        jLabel9.setText("For :");
+        jLabel9.setText("Sets :");
 
         tblPrescription.setFont(new java.awt.Font("Microsoft JhengHei Light", 0, 20)); // NOI18N
         tblPrescription.setModel(new javax.swing.table.DefaultTableModel(

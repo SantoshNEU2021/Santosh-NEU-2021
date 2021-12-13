@@ -106,7 +106,6 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
         tblDoctorRequest = new javax.swing.JTable();
         btnRefresh = new javax.swing.JButton();
         btnViewResults = new javax.swing.JButton();
-        btnClinicalTrail = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -177,7 +176,7 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Build Name", "Cores", "Make", "Message", "Receiver", "Status", "New", "Trial"
+                "Build Name", "Cores", "Make", "Message", "Receiver", "Status", "New", "Extra"
             }
         ) {
             Class[] types = new Class [] {
@@ -217,15 +216,6 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnClinicalTrail.setFont(new java.awt.Font("Palatino", 0, 14)); // NOI18N
-        btnClinicalTrail.setText("Clinical Trail");
-        btnClinicalTrail.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnClinicalTrail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClinicalTrailActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -233,10 +223,7 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(btnViewResults, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
-                        .addComponent(btnClinicalTrail, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnViewResults, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jPanel3Layout.createSequentialGroup()
                             .addComponent(enterpriseLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -255,9 +242,7 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewResults, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnClinicalTrail, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnViewResults, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -500,51 +485,6 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_btnViewResultsActionPerformed
 
-    private void btnClinicalTrailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClinicalTrailActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = tblDoctorRequest.getSelectedRow();
-
-        if (selectedRow < 0) {
-             JOptionPane.showMessageDialog(null,"please select a row for clinical trail");
-            return;
-        }
-       
-
-        SoftwareWorkRequest request = (SoftwareWorkRequest) tblDoctorRequest.getValueAt(selectedRow, 0);
-         if(tblDoctorRequest.getValueAt(selectedRow, 6)==null || tblDoctorRequest.getValueAt(selectedRow, 6) == "N/A")
-        {
-            JOptionPane.showMessageDialog(null, "Clinical trial cannot be performed on this patient");
-            return;
-        }
-     
-        
-         int flag=0;
-         if((tblDoctorRequest.getValueAt(selectedRow, 5).toString().equalsIgnoreCase("completed"))){
-            
-            flag++;
-            
-        }
-         if((tblDoctorRequest.getValueAt(selectedRow, 5).toString().equalsIgnoreCase("ClinicalTrail"))){            
-            flag++;
-            
-        }
-         System.out.println(flag+"clinical");
-         if(flag==0)
-         {
-             JOptionPane.showMessageDialog(this, "Software Engineer results are yet returned");
-             return;
-             
-         }
-         
-        request.setStatus("ClinicalTrail");
-
-//        ClinicalJPanel clinicalJPanel = new ClinicalJPanel(userProcessContainer, request);
-//        userProcessContainer.add("clincalJPanel", clinicalJPanel);
-//        log.debug("entering clinical Page");
-//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnClinicalTrailActionPerformed
-
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
 
         userProcessContainer.remove(this);
@@ -558,7 +498,6 @@ public class BuilderRequestJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnClinicalTrail;
     private javax.swing.JButton btnRefresh;
     private javax.swing.JButton btnSubmit;
     private javax.swing.JButton btnViewResults;

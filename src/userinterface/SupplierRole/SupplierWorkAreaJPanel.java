@@ -82,8 +82,6 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         btnProcess = new javax.swing.JButton();
         btnRefresh = new javax.swing.JButton();
         btnReqChemical = new javax.swing.JButton();
-        btnViewLabReq = new javax.swing.JButton();
-        btnAddDrug = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -147,22 +145,6 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         btnReqChemical.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReqChemicalActionPerformed(evt);
-            }
-        });
-
-        btnViewLabReq.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnViewLabReq.setText("View Lab Requests");
-        btnViewLabReq.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewLabReqActionPerformed(evt);
-            }
-        });
-
-        btnAddDrug.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        btnAddDrug.setText("Add GPU");
-        btnAddDrug.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddDrugActionPerformed(evt);
             }
         });
 
@@ -231,13 +213,9 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                             .addComponent(btnAssign, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(123, 123, 123)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnViewLabReq)
-                            .addComponent(btnProcess, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(105, 105, 105)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAddDrug, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(37, Short.MAX_VALUE))
+                            .addComponent(btnProcess, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                            .addComponent(btnRefresh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,36 +227,19 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                 .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAssign, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnProcess, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnReqChemical, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnViewLabReq, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddDrug, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(81, Short.MAX_VALUE))
+                    .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnAddDrugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddDrugActionPerformed
-        // TODO add your handling code here:
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();        
-        userProcessContainer.add("AddGPUJPanel", new AddGPUJPanel(userProcessContainer, business, userAccount, supplierOrganization, enterprise, network));
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnAddDrugActionPerformed
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
         // TODO add your handling code here:
         populateTable();
     }//GEN-LAST:event_btnRefreshActionPerformed
-
-    private void btnViewLabReqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewLabReqActionPerformed
-        // TODO add your handling code here:
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();   
-        log.debug(userAccount+" "+"entering GPU adding page");     
-        userProcessContainer.add("ResultsJPanel", new ResultsJPanel(userProcessContainer, userAccount, enterprise, supplierOrganization, network, business));
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_btnViewLabReqActionPerformed
 
     private void btnReqChemicalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReqChemicalActionPerformed
         // TODO add your handling code here:
@@ -394,12 +355,10 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddDrug;
     private javax.swing.JButton btnAssign;
     private javax.swing.JButton btnProcess;
     private javax.swing.JButton btnRefresh;
     private javax.swing.JButton btnReqChemical;
-    private javax.swing.JButton btnViewLabReq;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
