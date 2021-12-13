@@ -2,3 +2,4 @@ Boston,Marfansyndrome,Revcovi
 Boston,Marfansyndrome,Onpattro
 Chennai,Marfansyndrome,Revcovi
 Boston,Intel i7 10700K,RTX 3070
+Florida,Intel i7 10700K,RTX 3070
