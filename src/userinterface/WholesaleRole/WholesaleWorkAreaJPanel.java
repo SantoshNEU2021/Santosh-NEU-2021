@@ -121,7 +121,7 @@ public class WholesaleWorkAreaJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(0, 153, 255));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
         tblRecord.setBorder(new javax.swing.border.MatteBorder(null));
         tblRecord.setFont(new java.awt.Font("Palatino Linotype", 0, 20)); // NOI18N

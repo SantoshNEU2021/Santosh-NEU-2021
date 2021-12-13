@@ -75,7 +75,7 @@ public class BuilderWorkAreaJPanel extends javax.swing.JPanel {
 
         btnPrecription.setBackground(new java.awt.Color(255, 255, 255));
         btnPrecription.setFont(new java.awt.Font("Palatino", 0, 18)); // NOI18N
-        btnPrecription.setText("CONFIGURE PC");
+        btnPrecription.setText("Configure PC");
         btnPrecription.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPrecription.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
