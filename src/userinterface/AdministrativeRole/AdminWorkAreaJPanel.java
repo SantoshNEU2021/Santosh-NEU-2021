@@ -47,7 +47,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(0, 153, 255));
 
-        enterpriseLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Palatino", 1, 18)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseLabel.setText("Enterprise :");
 
@@ -55,7 +55,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel.setForeground(new java.awt.Color(0, 153, 255));
         valueLabel.setText("<value>");
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(248, 90, 51));
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -78,7 +78,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(248, 90, 51));
+        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
         btnManageOrganization.setFont(new java.awt.Font("Palatino Linotype", 0, 14)); // NOI18N
         btnManageOrganization.setText("Manage Organization");
